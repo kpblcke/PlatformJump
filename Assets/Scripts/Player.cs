@@ -7,10 +7,14 @@ public class Player : MonoBehaviour
     [SerializeField] float runSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;
     [SerializeField] float climbSpeed = 5f;
+    [SerializeField] Vector2 deathKick = new Vector2(25f, 25f);
+
+    private bool isAlive = true;
     
     Rigidbody2D _rigidBody;
     Animator _animator;
-    Collider2D _collider2D;
+    CapsuleCollider2D _bodyCollider;
+    BoxCollider2D _feetCollider;
     
     float gravityScaleAtStart;
 
@@ -18,16 +22,22 @@ public class Player : MonoBehaviour
 	void Start () {
         _rigidBody = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
-        _collider2D = GetComponent<Collider2D>();
+        _bodyCollider = GetComponent<CapsuleCollider2D>();
+        _feetCollider = GetComponent<BoxCollider2D>();
         gravityScaleAtStart = _rigidBody.gravityScale;
 	}
 
 	// Update is called once per frame
 	void Update () {
+		if (!isAlive)
+		{
+			return;
+		}
         Run();
         ClimbLadder();
         Jump();
         FlipSprite();
+        Die();
 	}
 
     private void Run()
@@ -41,7 +51,7 @@ public class Player : MonoBehaviour
     
     private void ClimbLadder()
     {
-	    if (!_collider2D.IsTouchingLayers(LayerMask.GetMask("Climbing")))
+	    if (!_feetCollider.IsTouchingLayers(LayerMask.GetMask("Climbing")))
 	    {
 		    _animator.SetBool("Climbing", false);
 		    _rigidBody.gravityScale = gravityScaleAtStart;
@@ -60,7 +70,7 @@ public class Player : MonoBehaviour
     
     private void Jump()
     {
-	    if (!_collider2D.IsTouchingLayers(LayerMask.GetMask("Ground")))
+	    if (!_feetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
 	    {
 		    return;
 	    } 
@@ -77,6 +87,16 @@ public class Player : MonoBehaviour
 	    if (playerHasHorizontalSpeed)
 	    {
 		    transform.localScale = new Vector2(Mathf.Sign(_rigidBody.velocity.x), 1);
+	    }
+    }
+
+    private void Die()
+    {
+	    if (_bodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemy", "Hazard")))
+	    {
+		    isAlive = false;
+		    _animator.SetTrigger("Dying");
+		    GetComponent<Rigidbody2D>().velocity = deathKick;
 	    }
     }
 }

@@ -1,20 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f8664de-d6e5-4882-9d4b-08ef94e02edc" name="Default Changelist" comment="-Initial">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformJump/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformJump/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformJump/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformJump/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5f8664de-d6e5-4882-9d4b-08ef94e02edc" name="Default Changelist" comment="-add movement">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LevelExit.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LevelExit.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Menu.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Menu.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/attack01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/attack01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/attack02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/attack02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/attack03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/attack03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/attack04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/attack04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/attack05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/attack05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/attack06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/attack06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/attack07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/attack07.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/attack08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/attack08.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/enemy02_sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/enemy02_sheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/hit01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/hit01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/hit02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/hit02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/hit03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/hit03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/idle01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/idle01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/idle02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/idle02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/idle03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/idle03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/idle04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/idle04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/idle05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/idle05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/idle06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/idle06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/idle07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/idle07.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/idle08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/idle08.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/idle09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/idle09.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/idle10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/idle10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/idle11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/idle11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/walk01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/walk01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/walk02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/walk02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/walk03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/walk03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/walk04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/walk04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/walk05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/walk05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/walk06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/walk06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/walk07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/walk07.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/walk08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RockyWorld/Sprites/Enemy2/walk08.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/attack_in_jump_sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/attack_in_jump_sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/attacks_sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/attacks_sheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/SPA_Background brown tint.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/SPA_Background brown tint.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/SPA_Rock_Grass_Water.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/SPA_Rock_Grass_Water.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sprites/hit,death_sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/hit,death_sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/slide_sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/slide_sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/throw_attack_sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/throw_attack_sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/throw_dagger_sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/throw_dagger_sheet.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tiles/Manual Tile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiles/Manual Tile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
@@ -26,10 +61,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Gamedev/Projects/PlatformJump/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyMoving.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyMovement" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelExit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menu.cs" />
       </list>
     </option>
   </component>
@@ -73,7 +116,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617898699356</updated>
-      <workItem from="1617898742788" duration="7561000" />
+      <workItem from="1617898742788" duration="13576000" />
     </task>
     <task id="LOCAL-00001" summary="-Initial">
       <created>1617912195610</created>
@@ -82,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617912195610</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="-add movement">
+      <created>1617968366702</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617968366702</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,7 +143,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="-Initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Initial" />
+    <MESSAGE value="-add movement" />
+    <option name="LAST_COMMIT_MESSAGE" value="-add movement" />
   </component>
   <component name="WindowStateProjectService">
     <state x="828" y="418" width="688" height="204" key="Github.ShareDialog" timestamp="1617911753493">
@@ -104,13 +155,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="673" y="226" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617911811506" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617912228259">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1617968370072">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617912228259" />
-    <state x="793" y="255" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1617912174786">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617968370072" />
+    <state x="793" y="255" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1617968356018">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="793" y="255" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617912174786" />
+    <state x="793" y="255" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617968356018" />
   </component>
 </project>
