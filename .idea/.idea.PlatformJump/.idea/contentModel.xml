@@ -5,10 +5,14 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="DiamondPickup.cs" t="Include" />
           <e p="EnemyMovement.cs" t="Include" />
+          <e p="GameSession.cs" t="Include" />
           <e p="LevelExit.cs" t="Include" />
           <e p="Menu.cs" t="Include" />
           <e p="Player.cs" t="Include" />
+          <e p="ScenePersist.cs" t="Include" />
+          <e p="VerticalScroll.cs" t="Include" />
         </e>
         <e p="StandartAssets" t="Include">
           <e p="2d-extras-master" t="Include">
